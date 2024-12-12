@@ -1,6 +1,13 @@
+import React, { Suspense } from "react";
 import { BrowserRouter } from "react-router-dom";
+import { Navbar, Hero, StarsCanvas } from "./components";
 
-import { About, Contact, Experience, Feedbacks, Hero, Navbar, Tech, Works, StarsCanvas } from "./components";
+const About = React.lazy(() => import("./components/About"));
+const Contact = React.lazy(() => import("./components/Contact"));
+const Experience = React.lazy(() => import("./components/Experience"));
+const Tech = React.lazy(() => import("./components/Tech"));
+const Works = React.lazy(() => import("./components/Works"));
+const Education = React.lazy(() => import("./components/Education"));
 
 const App = () => {
   return (
@@ -10,15 +17,17 @@ const App = () => {
           <Navbar />
           <Hero />
         </div>
-        <About />
-        <StarsCanvas />
-        <Experience />
-        <Tech />
-        <Works />
-        <Feedbacks />
-        <div className='relative z-0'>
-          <Contact />
-        </div>
+        <Suspense fallback={<div>Loading...</div>}>
+          <About />
+          <StarsCanvas />
+          <Education />
+          <Experience />
+          <Tech />
+          <Works />
+          <div className='relative z-0'>
+            <Contact />
+          </div>
+        </Suspense>
       </div>
     </BrowserRouter>
   );

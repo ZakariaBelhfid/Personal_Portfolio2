@@ -1,28 +1,30 @@
 import {
-  mobile,
+  frontend,
   backend,
-  creator,
-  web,
+  devops,
+  analytics,
   javascript,
-  typescript,
   html,
   css,
   reactjs,
-  redux,
-  tailwind,
-  nodejs,
-  mongodb,
-  git,
-  figma,
   docker,
-  meta,
-  starbucks,
-  tesla,
-  shopify,
-  carrent,
-  jobit,
-  tripguide,
-  threejs,
+  cacib,
+  efrei,
+  EcomShop,
+  Elearning,
+  TradingBot,
+  csharp,
+  python,
+  c,
+  java,
+  kub,
+  mysql,
+  postgresql,
+  spring,
+  cpge,
+
+
+
 } from "../assets";
 
 export const navLinks = [
@@ -31,31 +33,38 @@ export const navLinks = [
     title: "About",
   },
   {
-    id: "work",
-    title: "Work",
+    id: "education",
+    title: "Education",
   },
+  {
+    id: "Experience",
+    title: "Experience",
+  },
+
   {
     id: "contact",
     title: "Contact",
   },
+
+
 ];
 
 const services = [
   {
-    title: "Web Developer",
-    icon: web,
+    title: "FrontEnd Developer",
+    icon: frontend,
   },
   {
-    title: "React Native Developer",
-    icon: mobile,
-  },
-  {
-    title: "Backend Developer",
+    title: "BackEnd Developer",
     icon: backend,
   },
   {
-    title: "Content Creator",
-    icon: creator,
+    title: "Devops Engineer",
+    icon: devops,
+  },
+  {
+    title: "Data Analyst",
+    icon: analytics,
   },
 ];
 
@@ -74,91 +83,103 @@ const technologies = [
     icon: javascript,
   },
   {
-    name: "TypeScript",
-    icon: typescript,
-  },
-  {
     name: "React JS",
     icon: reactjs,
   },
   {
-    name: "Redux Toolkit",
-    icon: redux,
+    name: "python",
+    icon: python,
   },
   {
-    name: "Tailwind CSS",
-    icon: tailwind,
+    name: "Java",
+    icon: java,
   },
   {
-    name: "Node JS",
-    icon: nodejs,
+    name: "Spring",
+    icon: spring,
   },
   {
-    name: "MongoDB",
-    icon: mongodb,
+    name: "C",
+    icon: c,
   },
   {
-    name: "Three JS",
-    icon: threejs,
+    name: "Csharp",
+    icon: csharp,
+  },
+
+
+  {
+    name: "PostgreSQL",
+    icon: postgresql,
   },
   {
-    name: "git",
-    icon: git,
-  },
-  {
-    name: "figma",
-    icon: figma,
+    name: "mysql",
+    icon: mysql,
   },
   {
     name: "docker",
     icon: docker,
+  },
+  {
+    name: "Kubernetes",
+    icon: kub,
   },
 ];
 
 const experiences = [
   {
     title: "IT Business Analyst",
-    company_name: "Credit Agricole CIB",
-    icon: starbucks,
+    company_name: "Credit Agricole CIB, Paris",
+    icon: cacib,
     iconBg: "#383E56",
-    date: "March 2020 - April 2021",
+    date: "September 2022 - August 2025",
     points: [
-      "Developing and maintaining web applications using React.js and other related technologies.",
-      "Collaborating with cross-functional teams including designers, product managers, and other developers to create high-quality products.",
-      "Implementing responsive design and ensuring cross-browser compatibility.",
-      "Participating in code reviews and providing constructive feedback to other developers.",
+      "Built IT projects in Agile environments",
+      "Built IT projects in Agile environments",
+      "Documented business requirements through Story Maps and User Stories",
+      "Wrote and executed functional test senarios",
+      "Provided support to development teams",
+
+
     ],
   },
+];
 
+const educations = [
+  {
+    title: "Software Engineering",
+    school: "EFREI, Paris",
+    icon: efrei,
+    iconBg: "#383E56",
+    date: "September 2022 - August 2025",
+    points: [
+      "Web & Software Development : Java, C++, Python, Spring Boot, and React",
+      "Technologies : .NET (C#), JEE, XML, JSON, MySQL, and PostgreSQL",
+      "Big Data and AI : Machine Learning, Hadoop, and TensorFlow",
+      "Cloud Computing & DevOps : AWS, Azure, CI/CD pipelines, Ansible, and Terraform",
+      "Linux Administration",
+      "Cyber-security : Cryptography, and system security",
+      "Android App development : Kotlin"
+    ]
+  },
+
+  {
+    title: "CPGE TSI",
+    school: "Lycée du Hainaut, Valenciennes",
+    icon: cpge,
+    iconBg: "#4A90E2", // Example background color
+    date: "September 2020 - August 2022",
+    points: [
+      "Specialization : Industrial Technologies and Sciences ",
+      "Core Subjects : Mathematics, Physics, and Engineering Sciences",
+      "Practical Skills : Mechanics, Electronics, and Computer Programming",
+      "Projects : Multidisciplinary engineering challenges and problem-solving",
+      "Key Competencies : Analytical thinking, problem-solving, and time management"
+    ]
+  }
 ];
 
 
-const testimonials = [
-  {
-    testimonial:
-      "I thought it was impossible to make a website as beautiful as our product, but Rick proved me wrong.",
-    name: "Sara Lee",
-    designation: "CFO",
-    company: "Acme Co",
-    image: "https://randomuser.me/api/portraits/women/4.jpg",
-  },
-  {
-    testimonial:
-      "I've never met a web developer who truly cares about their clients' success like Rick does.",
-    name: "Chris Brown",
-    designation: "COO",
-    company: "DEF Corp",
-    image: "https://randomuser.me/api/portraits/men/5.jpg",
-  },
-  {
-    testimonial:
-      "After Rick optimized our website, our traffic increased by 50%. We can't thank them enough!",
-    name: "Lisa Wang",
-    designation: "CTO",
-    company: "456 Enterprises",
-    image: "https://randomuser.me/api/portraits/women/6.jpg",
-  },
-];
 
 const projects = [
   {
@@ -179,11 +200,11 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: carrent,
+    image: EcomShop,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Job IT",
+    name: "E Learning Platefrom",
     description:
       "Web application that enables users to search for job openings, view estimated salary ranges for positions, and locate available jobs based on their current location.",
     tags: [
@@ -200,11 +221,11 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: jobit,
+    image: Elearning,
     source_code_link: "https://github.com/",
   },
   {
-    name: "Trip Guide",
+    name: "Trading Bot",
     description:
       "A comprehensive travel booking platform that allows users to book flights, hotels, and rental cars, and offers curated recommendations for popular destinations.",
     tags: [
@@ -221,9 +242,9 @@ const projects = [
         color: "pink-text-gradient",
       },
     ],
-    image: tripguide,
+    image: TradingBot,
     source_code_link: "https://github.com/",
   },
 ];
 
-export { services, technologies, experiences, testimonials, projects };
+export { services, technologies, experiences, educations, projects };
